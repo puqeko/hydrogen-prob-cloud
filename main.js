@@ -1,4 +1,6 @@
 var shouldBeFlat = false; // set this to restrict to a 2d plane
+var numPoints = 20000; //50000,//16384;
+var allocation = 16000; // render in point batches
     
 // Load mathbox with controls
 var mathbox = mathBox({
@@ -40,9 +42,7 @@ function randRad(target) {
 }
 
 function genPoints() {
-    var numPoints = 20000; //50000,//16384;
-    allocation = 16000, // render in point batches
-        points = [],
+    var points = [],
         loopPoints = [],
         total = 0;
 
