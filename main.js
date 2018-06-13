@@ -1,4 +1,4 @@
-var shouldBeFlat = true; // set this to restrict to a 2d plane
+var shouldBeFlat = false; // set this to restrict to a 2d plane
     
 // Load mathbox with controls
 var mathbox = mathBox({
